@@ -1,0 +1,1779 @@
+/* =====================================================
+   MODULO DE PROTESIS - ESTILOS COMPLETOS
+   ===================================================== */
+
+.ortesis-page {
+  min-height: 100vh;
+  background: var(--bg-primary, #F5F7F2);
+  padding-bottom: 100px;
+}
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.ortesis-page .page-header {
+  background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+  padding: 1rem 1.5rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.ortesis-page .btn-back-header {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s;
+}
+
+.ortesis-page .btn-back-header:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ortesis-page .header-content h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.ortesis-page .header-content .subtitle {
+  margin: 0.25rem 0 0;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+/* =====================================================
+   NAVEGACION POR TABS
+   ===================================================== */
+
+.ortesis-page .tabs-nav {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-secondary, #FFFFFF);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  border-bottom: 1px solid var(--border-color, #E0E0E0);
+}
+
+.ortesis-page .tabs-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.ortesis-page .tabs-nav .tab {
+  flex-shrink: 0;
+  padding: 0.6rem 1rem;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary, #6B6B6B);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.ortesis-page .tabs-nav .tab:hover {
+  background: var(--bg-tertiary, #E8E8E8);
+  color: var(--text-primary, #1A1A1A);
+}
+
+.ortesis-page .tabs-nav .tab.active {
+  background: #1565C0;
+  color: white;
+}
+
+/* =====================================================
+   CONTENIDO PRINCIPAL
+   ===================================================== */
+
+.ortesis-page .tab-content {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ortesis-page .section-header {
+  margin-bottom: 1.5rem;
+}
+
+.ortesis-page .section-header h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--inst-title, #0c71c3);
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.ortesis-page .section-header p {
+  color: var(--text-secondary, #6B6B6B);
+  margin: 0;
+}
+
+/* =====================================================
+   PAGINA DE INICIO
+   ===================================================== */
+
+.welcome-banner {
+  background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.welcome-banner h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.welcome-banner p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.action-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 12px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid var(--border-color, #E8E8E8);
+}
+
+.action-card:hover {
+  border-color: #1565C0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.action-card .action-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.action-card h3 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.action-card p {
+  color: var(--text-secondary, #6B6B6B);
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* Card de Nivel K del usuario */
+.user-nivel-k-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #1565C0;
+}
+
+.user-nivel-k-card .nivel-badge {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #1565C0, #0D47A1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.user-nivel-k-card .nivel-letra {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.user-nivel-k-card .nivel-info {
+  flex: 1;
+}
+
+.user-nivel-k-card .nivel-info h3 {
+  color: var(--text-secondary, #6B6B6B);
+  font-size: 0.8rem;
+  margin: 0 0 0.25rem;
+  text-transform: uppercase;
+}
+
+.user-nivel-k-card .nivel-nombre {
+  color: var(--text-primary, #1A1A1A);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.user-nivel-k-card .nivel-desc {
+  color: var(--text-secondary, #6B6B6B);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Resumen de contenido */
+.content-summary {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 12px;
+  padding: 1.25rem;
+  border: 1px solid var(--border-color, #E8E8E8);
+}
+
+.content-summary h3 {
+  color: var(--text-primary, #1A1A1A);
+  font-size: 1rem;
+  margin: 0 0 1rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.summary-item {
+  text-align: center;
+}
+
+.summary-number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1565C0;
+}
+
+.summary-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary, #6B6B6B);
+}
+
+/* =====================================================
+   NIVELES K
+   ===================================================== */
+
+.niveles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+  gap: 1rem;
+}
+
+.nivel-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 16px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.nivel-card:hover {
+  border-color: #1565C0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nivel-card.current {
+  border-color: #1565C0;
+  background: linear-gradient(135deg, rgba(21, 101, 192, 0.06), transparent);
+}
+
+.current-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #1565C0;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.nivel-badge {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #1565C0, #0D47A1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.nivel-badge span {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.nivel-badge.large {
+  width: 80px;
+  height: 80px;
+}
+
+.nivel-badge.large span {
+  font-size: 2rem;
+}
+
+.nivel-badge.small {
+  width: 36px;
+  height: 36px;
+}
+
+.nivel-badge.small span {
+  font-size: 0.9rem;
+}
+
+.nivel-badge.mini {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  margin: 0;
+}
+
+.nivel-badge.mini span {
+  font-size: 0.7rem;
+}
+
+.nivel-card h3 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.nivel-card > p {
+  color: var(--text-secondary, #6B6B6B);
+  font-size: 0.85rem;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.nivel-preview {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary, #6B6B6B);
+}
+
+/* Detalle de Nivel K */
+.nivel-detail-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color, #E8E8E8);
+}
+
+.nivel-header {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--bg-tertiary, #E0E0E0);
+}
+
+.nivel-header h2 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0 0 0.5rem;
+}
+
+.nivel-header .nivel-desc {
+  color: var(--text-secondary, #6B6B6B);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.nivel-sections {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.nivel-section h3 {
+  color: #1565C0;
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.nivel-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.nivel-section li {
+  color: var(--text-primary, #1A1A1A);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.actividades-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin-left: -1.25rem;
+}
+
+.check-icon {
+  color: #1565C0;
+  font-weight: bold;
+}
+
+/* =====================================================
+   TIPOS DE PROTESIS
+   ===================================================== */
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.categoria-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.categoria-card:hover {
+  border-color: #1565C0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.categoria-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.categoria-card h3 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.categoria-card p {
+  color: var(--text-secondary, #6B6B6B);
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+}
+
+.tipos-count {
+  color: #1565C0;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.tipos-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tipo-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 12px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid var(--border-color, #E8E8E8);
+}
+
+.tipo-card:hover {
+  border-color: #1565C0;
+}
+
+.tipo-card h4 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.tipo-card p {
+  color: var(--text-secondary, #6B6B6B);
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+}
+
+/* Detalle de Tipo */
+.tipo-detail-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color, #E8E8E8);
+}
+
+.tipo-detail-card h2 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0 0 0.5rem;
+}
+
+.tipo-categoria {
+  display: inline-block;
+  background: var(--bg-tertiary, #E8E8E8);
+  color: var(--text-secondary, #6B6B6B);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.tipo-descripcion {
+  color: var(--text-primary, #1A1A1A);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.nivel-minimo {
+  background: var(--bg-tertiary, #F0F2ED);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.nivel-minimo span:first-child {
+  color: var(--text-secondary, #6B6B6B);
+  font-size: 0.9rem;
+}
+
+.tipo-sections {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.tipo-section h3 {
+  color: var(--text-primary, #1A1A1A);
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.tipo-section.ventajas h3 {
+  color: #1565C0;
+}
+
+.tipo-section.desventajas h3 {
+  color: #F57F17;
+}
+
+.tipo-section.cuidados {
+  background: rgba(21, 101, 192, 0.06);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid #1565C0;
+}
+
+.tipo-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.tipo-section li {
+  color: var(--text-primary, #1A1A1A);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* =====================================================
+   GUIAS DE CUIDADO
+   ===================================================== */
+
+.categorias-guias-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.categoria-guia-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+  border-left: 4px solid var(--cat-color, #1565C0);
+}
+
+.categoria-guia-card:hover {
+  border-color: var(--cat-color, #1565C0);
+}
+
+.categoria-guia-card .categoria-icon {
+  font-size: 2rem;
+}
+
+.categoria-guia-card h3 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1rem;
+}
+
+.guias-count {
+  color: var(--text-secondary, #6B6B6B);
+  font-size: 0.8rem;
+}
+
+.guias-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.guia-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 12px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid var(--border-color, #E8E8E8);
+}
+
+.guia-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.guia-card h4 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0 0 0.5rem;
+}
+
+.guia-card p {
+  color: var(--text-secondary, #6B6B6B);
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+}
+
+.guia-meta {
+  font-size: 0.75rem;
+  color: var(--text-secondary, #6B6B6B);
+  margin-bottom: 0.75rem;
+}
+
+/* Detalle de Guia */
+.guia-detail-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-color, #E8E8E8);
+}
+
+.guia-header {
+  background: linear-gradient(135deg, var(--cat-color, #1565C0), transparent);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.guia-header .guia-icon {
+  font-size: 2.5rem;
+}
+
+.guia-header h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.guia-intro {
+  padding: 1.5rem;
+  color: var(--text-primary, #1A1A1A);
+  line-height: 1.6;
+  border-bottom: 1px solid var(--bg-tertiary, #E0E0E0);
+  margin: 0;
+}
+
+.guia-section {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--bg-tertiary, #E0E0E0);
+}
+
+.guia-section:last-child {
+  border-bottom: none;
+}
+
+.guia-section h3 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.guia-section.tips {
+  background: rgba(21, 101, 192, 0.05);
+}
+
+.guia-section.advertencias {
+  background: rgba(198, 40, 40, 0.05);
+}
+
+.pasos-list {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.pasos-list li {
+  color: var(--text-primary, #1A1A1A);
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.guia-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.guia-section li {
+  color: var(--text-primary, #1A1A1A);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* =====================================================
+   MI PROTESIS
+   ===================================================== */
+
+.mi-protesis-section .dispositivo-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color, #E8E8E8);
+}
+
+.mi-protesis-section .dispositivo-card .dispositivo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--bg-tertiary, #E0E0E0);
+}
+
+.mi-protesis-section .dispositivo-header h3 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.info-item {
+  background: var(--bg-tertiary, #F0F2ED);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.info-item.destacado {
+  background: linear-gradient(135deg, rgba(21, 101, 192, 0.08), transparent);
+  border: 1px solid #1565C0;
+}
+
+.info-label {
+  display: block;
+  color: var(--text-secondary, #6B6B6B);
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.info-value {
+  color: var(--text-primary, #1A1A1A);
+  font-weight: 600;
+}
+
+.notas-especialista {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-tertiary, #F0F2ED);
+  border-radius: 8px;
+  border-left: 3px solid #1565C0;
+}
+
+.notas-especialista h4 {
+  color: var(--text-secondary, #6B6B6B);
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+}
+
+.notas-especialista p {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0;
+}
+
+.acciones-dispositivo {
+  display: flex;
+  gap: 1rem;
+}
+
+.no-dispositivo {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 16px;
+  border: 1px solid var(--border-color, #E8E8E8);
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.no-dispositivo h3 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0 0 0.5rem;
+}
+
+.no-dispositivo p {
+  color: var(--text-secondary, #6B6B6B);
+  margin: 0 0 1.5rem;
+}
+
+/* =====================================================
+   PROBLEMAS
+   ===================================================== */
+
+.problemas-section .btn-lg {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.problemas-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.problema-card {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 12px;
+  padding: 1.25rem;
+  border-left: 4px solid;
+  border: 1px solid var(--border-color, #E8E8E8);
+  border-left: 4px solid;
+}
+
+.problema-card.urgencia-baja {
+  border-left-color: #1565C0;
+}
+
+.problema-card.urgencia-media {
+  border-left-color: #F57F17;
+}
+
+.problema-card.urgencia-alta {
+  border-left-color: #C62828;
+}
+
+.problema-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.problema-tipo {
+  color: var(--text-primary, #1A1A1A);
+  font-weight: 500;
+}
+
+.urgencia-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.urgencia-badge.baja {
+  background: rgba(21, 101, 192, 0.1);
+  color: #1565C0;
+}
+
+.urgencia-badge.media {
+  background: rgba(245, 127, 23, 0.1);
+  color: #F57F17;
+}
+
+.urgencia-badge.alta {
+  background: rgba(198, 40, 40, 0.1);
+  color: #C62828;
+}
+
+.problema-descripcion {
+  color: var(--text-secondary, #6B6B6B);
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
+.problema-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.problema-fecha {
+  color: var(--text-secondary, #6B6B6B);
+}
+
+.problema-estado {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.problema-estado.pendiente {
+  background: rgba(245, 127, 23, 0.1);
+  color: #F57F17;
+}
+
+.problema-estado.resuelto {
+  background: rgba(21, 101, 192, 0.1);
+  color: #1565C0;
+}
+
+.no-problemas {
+  text-align: center;
+  padding: 2rem;
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 12px;
+  border: 1px solid var(--border-color, #E8E8E8);
+}
+
+.no-problemas p {
+  margin: 0;
+  color: var(--text-primary, #1A1A1A);
+}
+
+.no-problemas .text-muted {
+  color: var(--text-secondary, #6B6B6B);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* =====================================================
+   FAQs
+   ===================================================== */
+
+.faqs-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.faq-item {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color, #E8E8E8);
+}
+
+.faq-item summary {
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-primary, #1A1A1A);
+  font-weight: 500;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  margin-left: auto;
+  font-size: 1.25rem;
+  color: var(--text-secondary, #6B6B6B);
+  transition: transform 0.2s;
+}
+
+.faq-item[open] summary::after {
+  content: '-';
+}
+
+.faq-icon {
+  font-size: 1.25rem;
+}
+
+.faq-answer {
+  padding: 0 1.25rem 1.25rem;
+  color: var(--text-secondary, #6B6B6B);
+  line-height: 1.6;
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
+/* =====================================================
+   BOTONES
+   ===================================================== */
+
+.ortesis-page .btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.ortesis-page .btn-primary {
+  background: #1565C0;
+  color: white;
+}
+
+.ortesis-page .btn-primary:hover {
+  background: #0D47A1;
+}
+
+.ortesis-page .btn-secondary {
+  background: var(--bg-tertiary, #E8E8E8);
+  color: var(--text-primary, #1A1A1A);
+}
+
+.ortesis-page .btn-secondary:hover {
+  background: #D5D5D5;
+}
+
+.ortesis-page .btn-outline {
+  background: transparent;
+  border: 1px solid #1565C0;
+  color: #1565C0;
+}
+
+.ortesis-page .btn-outline:hover {
+  background: rgba(21, 101, 192, 0.06);
+}
+
+.ortesis-page .btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+.btn-back {
+  background: var(--bg-tertiary, #E8E8E8);
+  color: var(--text-primary, #1A1A1A);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* =====================================================
+   MODAL
+   ===================================================== */
+
+.ortesis-page .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.ortesis-page .modal-content {
+  background: var(--bg-secondary, #FFFFFF);
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid var(--border-color, #E0E0E0);
+}
+
+.ortesis-page .modal-content h2 {
+  color: var(--text-primary, #1A1A1A);
+  margin: 0 0 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  color: var(--text-primary, #1A1A1A);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--bg-tertiary, #F0F2ED);
+  border: 1px solid var(--border-color, #E0E0E0);
+  border-radius: 8px;
+  color: var(--text-primary, #1A1A1A);
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #1565C0;
+}
+
+.tipo-problema-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.tipo-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--bg-tertiary, #F0F2ED);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tipo-btn:hover {
+  border-color: var(--border-color, #E0E0E0);
+}
+
+.tipo-btn.selected {
+  border-color: #1565C0;
+  background: rgba(21, 101, 192, 0.06);
+}
+
+.tipo-btn .tipo-icon {
+  font-size: 1.5rem;
+}
+
+.tipo-btn .tipo-nombre {
+  color: var(--text-primary, #1A1A1A);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.modal-actions .btn {
+  flex: 1;
+}
+
+/* =====================================================
+   UTILIDADES
+   ===================================================== */
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.loading-container p {
+  color: var(--text-secondary, #6B6B6B);
+  margin-top: 1rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--bg-tertiary, #E0E0E0);
+  border-top-color: #1565C0;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.error-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-container p {
+  color: #C62828;
+  margin-bottom: 1rem;
+}
+
+/* =====================================================
+   MODO CLARO (ya es el default, mantener para compat)
+   ===================================================== */
+
+[data-theme="light"] .ortesis-page {
+  background: #F5F7F2;
+}
+
+[data-theme="light"] .ortesis-page .tabs-nav {
+  background: white;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+[data-theme="light"] .ortesis-page .tabs-nav .tab {
+  color: #6B6B6B;
+}
+
+[data-theme="light"] .ortesis-page .tabs-nav .tab:hover {
+  background: #F0F2ED;
+  color: #1A1A1A;
+}
+
+[data-theme="light"] .action-card,
+[data-theme="light"] .nivel-card,
+[data-theme="light"] .categoria-card,
+[data-theme="light"] .categoria-guia-card,
+[data-theme="light"] .tipo-card,
+[data-theme="light"] .guia-card,
+[data-theme="light"] .problema-card,
+[data-theme="light"] .faq-item,
+[data-theme="light"] .ortesis-page .modal-content,
+[data-theme="light"] .mi-protesis-section .dispositivo-card,
+[data-theme="light"] .content-summary,
+[data-theme="light"] .user-nivel-k-card,
+[data-theme="light"] .nivel-detail-card,
+[data-theme="light"] .tipo-detail-card,
+[data-theme="light"] .guia-detail-card,
+[data-theme="light"] .no-dispositivo,
+[data-theme="light"] .no-problemas {
+  background: white;
+  border: 1px solid #E0E0E0;
+}
+
+[data-theme="light"] .form-control,
+[data-theme="light"] .tipo-btn,
+[data-theme="light"] .info-item,
+[data-theme="light"] .btn-back {
+  background: #F0F2ED;
+  border-color: #E0E0E0;
+}
+
+[data-theme="light"] .ortesis-page .btn-secondary {
+  background: #E8E8E8;
+  color: #1A1A1A;
+}
+
+/* =====================================================
+   MODO OSCURO
+   ===================================================== */
+
+[data-theme="dark"] .ortesis-page {
+  background: var(--background-primary);
+}
+
+[data-theme="dark"] .ortesis-page .tabs-nav {
+  background: var(--surface-primary);
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .ortesis-page .tabs-nav .tab {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .ortesis-page .tabs-nav .tab:hover {
+  background: var(--surface-tertiary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .ortesis-page .section-header h2 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .ortesis-page .section-header p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .action-card {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .action-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .action-card h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .action-card p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .user-nivel-k-card {
+  background: var(--surface-primary);
+}
+
+[data-theme="dark"] .user-nivel-k-card .nivel-info h3 {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .user-nivel-k-card .nivel-nombre {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .user-nivel-k-card .nivel-desc {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .content-summary {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .content-summary h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .summary-label {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .nivel-card {
+  background: var(--surface-primary);
+}
+
+[data-theme="dark"] .nivel-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .nivel-card h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .nivel-card > p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .nivel-preview {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .nivel-detail-card {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .nivel-header {
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .nivel-header h2 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .nivel-header .nivel-desc {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .nivel-section li {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .categoria-card {
+  background: var(--surface-primary);
+}
+
+[data-theme="dark"] .categoria-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .categoria-card h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .categoria-card p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .tipo-card {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .tipo-card h4 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .tipo-card p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .tipo-detail-card {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .tipo-detail-card h2 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .tipo-categoria {
+  background: var(--surface-tertiary);
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .tipo-descripcion {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .nivel-minimo {
+  background: var(--surface-secondary);
+}
+
+[data-theme="dark"] .nivel-minimo span:first-child {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .tipo-section h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .tipo-section li {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .tipo-section.cuidados {
+  background: rgba(21, 101, 192, 0.1);
+}
+
+[data-theme="dark"] .categoria-guia-card {
+  background: var(--surface-primary);
+}
+
+[data-theme="dark"] .categoria-guia-card h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .guias-count {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .guia-card {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .guia-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .guia-card h4 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .guia-card p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .guia-meta {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .guia-detail-card {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .guia-intro {
+  color: var(--text-primary);
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .guia-section {
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .guia-section h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .guia-section li {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .guia-section.tips {
+  background: rgba(21, 101, 192, 0.1);
+}
+
+[data-theme="dark"] .guia-section.advertencias {
+  background: rgba(198, 40, 40, 0.1);
+}
+
+[data-theme="dark"] .pasos-list li {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .mi-protesis-section .dispositivo-card {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .mi-protesis-section .dispositivo-card .dispositivo-header {
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .mi-protesis-section .dispositivo-header h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .info-item {
+  background: var(--surface-secondary);
+}
+
+[data-theme="dark"] .info-label {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .info-value {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .notas-especialista {
+  background: var(--surface-secondary);
+}
+
+[data-theme="dark"] .notas-especialista h4 {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .notas-especialista p {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .no-dispositivo {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .no-dispositivo h3 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .no-dispositivo p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .problema-card {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .problema-tipo {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .problema-descripcion {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .problema-fecha {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .no-problemas {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .no-problemas p {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .no-problemas .text-muted {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .faq-item {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .faq-item summary {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .faq-item summary::after {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .faq-answer {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .ortesis-page .btn-secondary {
+  background: var(--surface-tertiary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .ortesis-page .btn-secondary:hover {
+  background: var(--surface-secondary);
+}
+
+[data-theme="dark"] .btn-back {
+  background: var(--surface-tertiary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .ortesis-page .modal-content {
+  background: var(--surface-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .ortesis-page .modal-content h2 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .form-group label {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .form-control {
+  background: var(--surface-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .tipo-btn {
+  background: var(--surface-secondary);
+}
+
+[data-theme="dark"] .tipo-btn:hover {
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .tipo-btn .tipo-nombre {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .loading-container p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .spinner {
+  border-color: var(--border-color);
+}
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 768px) {
+  .quick-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .acciones-dispositivo {
+    flex-direction: column;
+  }
+
+  .nivel-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .user-nivel-k-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .categorias-grid,
+  .categorias-guias-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .ortesis-page .tab-content {
+    padding: 1rem;
+  }
+
+  .welcome-banner {
+    padding: 1.25rem;
+  }
+
+  .welcome-banner h2 {
+    font-size: 1.2rem;
+  }
+
+  .nivel-card {
+    padding: 1rem;
+  }
+
+  .tipo-problema-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .ortesis-page .page-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .ortesis-page .header-content h1 {
+    font-size: 1.25rem;
+  }
+}
